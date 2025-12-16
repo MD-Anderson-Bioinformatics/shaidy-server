@@ -1,0 +1,412 @@
+{
+    "class": "ngchm",
+    "name": "tcga_rppa_acc_v2.0_sample_sample",
+    "version": 2,
+    "layers": [
+        {
+            "name": "Correlation",
+            "renderer": 0,
+            "data": {
+                "class": "shaid",
+                "type": "dataset",
+                "value": "055af3bdff507bfe6fe273712c5ab93000685ec5"
+            }
+        }
+    ],
+    "dialogs": [
+        {
+            "class": "ngchmDialog",
+            "id": "tcgaPubGuide",
+            "title": "TCGA Publication Guidelines"
+        }
+    ],
+    "tags": [
+        {
+            "class": "ngchmProperty",
+            "label": "BUILTBY",
+            "value": "BMBroom"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "ROWCLASS",
+            "value": "sample"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "COLCLASS",
+            "value": "sample"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "TCGATUMORTYPE",
+            "value": "ACC"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "CBIOSTUDY",
+            "value": "acc_tcga"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "PLATFORM",
+            "value": "RPPA"
+        }
+    ],
+    "axisTypes": [
+        {
+            "class": "ngchmAxisType",
+            "where": "both",
+            "type": "bio.tcga.barcode.sample.vial.portion.analyte.aliquot"
+        }
+    ],
+    "properties": [
+        {
+            "class": "ngchmProperty",
+            "label": "chm.info.caption",
+            "value": "Sample-sample comparison of RPPA for 192 proteins in 46 tcga ACC samples, using the output from the 2016_01_20_1306 run of MDACC Data Converter."
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "chm.dendrogram.image.left.width",
+            "value": "125"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "chm.right.image.width",
+            "value": "125"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "chm.dendrogram.image.top.height",
+            "value": "125"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "chm.bottom.image.height",
+            "value": "125"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "!axistype.both",
+            "value": "bio.tcga.barcode.sample.vial.portion.analyte.aliquot"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "!extraparam:bio.tcga.tumortype",
+            "value": "ACC"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "!extraparam:bio.cbioportal.studyid",
+            "value": "acc_tcga"
+        },
+        {
+            "class": "ngchmProperty",
+            "label": "chm.info.external.url",
+            "value": "http://bioinformatics.mdanderson.org/main/TCGA/Supplements/NGCHM-ACC"
+        }
+    ],
+    "relatedLinks": [
+        {
+            "class": "ngchmRelated",
+            "group": "sites",
+            "link": "http://bioinformatics.mdanderson.org/main/NG-CHM:Overview",
+            "description": "About NG-CHMs"
+        },
+        {
+            "class": "ngchmRelated",
+            "group": "sites",
+            "link": "http://bioinformatics.mdanderson.org/main/TCGA/NGCHM",
+            "description": "NG-CHMs for tcga"
+        },
+        {
+            "class": "ngchmRelated",
+            "group": "sites",
+            "link": "http://bioinformatics.mdanderson.org/main/TCGA/Supplements/NGCHM-ACC",
+            "description": "NG-CHMs for tcga ACC"
+        }
+    ],
+    "relatedGroups": [
+        {
+            "class": "ngchmRelatedGroup",
+            "name": "sites",
+            "header": "Web Sites",
+            "linktype": "links"
+        },
+        {
+            "class": "ngchmRelatedGroup",
+            "name": "papers",
+            "header": "Papers",
+            "linktype": "links"
+        },
+        {
+            "class": "ngchmRelatedGroup",
+            "name": "ngchm",
+            "header": "NG-CHM",
+            "linktype": "ngchm"
+        }
+    ],
+    "row_data": {
+        "order_method": "User",
+        "labels": {
+            "class": "shaid",
+            "type": "label",
+            "value": "1ac94d5086f44e1de33e54e08ed63c92483a0c2c"
+        },
+        "distance_metric": "correlation",
+        "agglomeration_method": "ward.D2",
+        "dendrogram": {
+            "class": "shaid",
+            "type": "dendrogram",
+            "value": "78e0390ef87180e5a20b8e66a88d16948ecb9806"
+        }
+    },
+    "col_data": {
+        "order_method": "User",
+        "labels": {
+            "class": "shaid",
+            "type": "label",
+            "value": "1ac94d5086f44e1de33e54e08ed63c92483a0c2c"
+        },
+        "distance_metric": "correlation",
+        "agglomeration_method": "ward.D2",
+        "dendrogram": {
+            "class": "shaid",
+            "type": "dendrogram",
+            "value": "78e0390ef87180e5a20b8e66a88d16948ecb9806"
+        }
+    },
+    "type_mappers": [
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.tcga.barcode.sample.vial.portion.analyte.aliquot",
+                "bio.tcga.barcode.sample.vial.portion.analyte",
+                "bio.tcga.barcode.sample.vial.portion",
+                "bio.tcga.barcode.sample.vial"
+            ],
+            "totype": "bio.tcga.barcode.sample",
+            "op": "expr",
+            "expr": "split('-').slice(0,3).join('-')",
+            "return": "scalar"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.unigene.bar.affyid"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "field",
+            "separator": "|",
+            "num": "0"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.unigene.bar.affyid"
+            ],
+            "totype": "bio.gene.unigene",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.unigene.bar.affyid"
+            ],
+            "totype": "bio.affymetrix.probe.id",
+            "op": "field",
+            "separator": "|",
+            "num": "2"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.entrezid",
+                "bio.gene.hugo.bar.agilentid",
+                "bio.gene.hugo.bar.illuminaid"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "field",
+            "separator": "|",
+            "num": "0"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.entrezid"
+            ],
+            "totype": "bio.gene.entrezid",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.agilentid"
+            ],
+            "totype": "bio.agilent.feature.id",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.bar.illuminaid"
+            ],
+            "totype": "bio.illumina.probe.id",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.meth.infinium.probe.bar.bio.gene.hugo"
+            ],
+            "totype": "bio.meth.infinium.probe",
+            "op": "field",
+            "separator": "|",
+            "num": "0"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.meth.infinium.probe.bar.bio.gene.hugo"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.transcriptid.gene"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "expr",
+            "expr": "replace(/^ENST[0-9]*/,\"\")",
+            "return": "scalar"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.transcriptid.gene"
+            ],
+            "totype": "bio.transcriptid",
+            "op": "expr",
+            "expr": "replace(/^(ENST[0-9]*).*/,\"$1\")",
+            "return": "scalar"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo"
+            ],
+            "totype": "bio.pubmed",
+            "op": "expr",
+            "expr": "substring(0)",
+            "return": "scalar"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo",
+                "bio.mirna",
+                "bio.pubmed"
+            ],
+            "totype": "scholar",
+            "op": "expr",
+            "expr": "substring(0)",
+            "return": "scalar"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.agilent.id.colon.gene.hugo"
+            ],
+            "totype": "bio.agilent.feature.id",
+            "op": "field",
+            "separator": ":",
+            "num": "0"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.agilent.id.colon.gene.hugo"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "field",
+            "separator": ":",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.mirna.bar.mimat"
+            ],
+            "totype": "bio.mirna",
+            "op": "field",
+            "separator": "|",
+            "num": "0"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.mirna.bar.mimat"
+            ],
+            "totype": "bio.mirna.mimat",
+            "op": "field",
+            "separator": "|",
+            "num": "1"
+        },
+        {
+            "class": "ngchmTypeMapper",
+            "fromtype": [
+                "bio.gene.hugo.list.space"
+            ],
+            "totype": "bio.gene.hugo",
+            "op": "expr",
+            "expr": "split(' ')",
+            "return": "vector"
+        }
+    ],
+    "renderers": [
+        {
+            "class": "ngchmColormap",
+            "type": "linear",
+            "missing": "green",
+            "points": [
+                {
+                    "class": "ngchmValueProp",
+                    "value": -0.6,
+                    "color": "blue",
+                    "name": "-0.6",
+                    "shape": "circle",
+                    "z": 9
+                },
+                {
+                    "class": "ngchmValueProp",
+                    "value": 0,
+                    "color": "white",
+                    "name": "0",
+                    "shape": "square",
+                    "z": 9
+                },
+                {
+                    "class": "ngchmValueProp",
+                    "value": 0.6,
+                    "color": "red",
+                    "name": "0.6",
+                    "shape": "diamond",
+                    "z": 9
+                }
+            ]
+        }
+    ]
+}
+

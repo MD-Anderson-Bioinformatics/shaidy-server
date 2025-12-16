@@ -1,0 +1,91 @@
+--[dendrogram w/ 2 branches and 46 members at h = 3.46]
+  |--[dendrogram w/ 2 branches and 17 members at h = 1.6]
+  |  |--[dendrogram w/ 2 branches and 9 members at h = 1.21]
+  |  |  |--[dendrogram w/ 2 branches and 4 members at h = 0.64]
+  |  |  |  |--leaf "TCGA-OR-A5LH-01A-21-A39K-20" 
+  |  |  |  `--[dendrogram w/ 2 branches and 3 members at h = 0.249]
+  |  |  |     |--leaf "TCGA-OR-A5LP-01A-21-A39K-20" 
+  |  |  |     `--[dendrogram w/ 2 branches and 2 members at h = 0.169]
+  |  |  |        |--leaf "TCGA-OR-A5J6-01A-41-A39K-20" 
+  |  |  |        `--leaf "TCGA-PA-A5YG-01A-21-A39K-20" 
+  |  |  `--[dendrogram w/ 2 branches and 5 members at h = 0.96]
+  |  |     |--leaf "TCGA-OR-A5KX-01A-21-A39K-20" 
+  |  |     `--[dendrogram w/ 2 branches and 4 members at h = 0.847]
+  |  |        |--leaf "TCGA-OR-A5JZ-01A-21-A39K-20" 
+  |  |        `--[dendrogram w/ 2 branches and 3 members at h = 0.499]
+  |  |           |--leaf "TCGA-PK-A5HA-01A-21-A39K-20" 
+  |  |           `--[dendrogram w/ 2 branches and 2 members at h = 0.418]
+  |  |              |--leaf "TCGA-OR-A5JT-01A-21-A39K-20" 
+  |  |              `--leaf "TCGA-OR-A5LK-01A-21-A39K-20" 
+  |  `--[dendrogram w/ 2 branches and 8 members at h = 1.43]
+  |     |--[dendrogram w/ 2 branches and 4 members at h = 0.597]
+  |     |  |--leaf "TCGA-OR-A5LT-01A-21-A39K-20" 
+  |     |  `--[dendrogram w/ 2 branches and 3 members at h = 0.376]
+  |     |     |--leaf "TCGA-OR-A5K1-01A-21-A39K-20" 
+  |     |     `--[dendrogram w/ 2 branches and 2 members at h = 0.247]
+  |     |        |--leaf "TCGA-OR-A5JR-01A-21-A39K-20" 
+  |     |        `--leaf "TCGA-OR-A5LN-01A-21-A39K-20" 
+  |     `--[dendrogram w/ 2 branches and 4 members at h = 0.779]
+  |        |--leaf "TCGA-PK-A5H8-01A-21-A39K-20" 
+  |        `--[dendrogram w/ 2 branches and 3 members at h = 0.636]
+  |           |--leaf "TCGA-OR-A5LM-01A-21-A39K-20" 
+  |           `--[dendrogram w/ 2 branches and 2 members at h = 0.401]
+  |              |--leaf "TCGA-OR-A5JV-01A-21-A39K-20" 
+  |              `--leaf "TCGA-OR-A5K3-01A-21-A39K-20" 
+  `--[dendrogram w/ 2 branches and 29 members at h = 2.6]
+     |--[dendrogram w/ 2 branches and 15 members at h = 1.59]
+     |  |--[dendrogram w/ 2 branches and 7 members at h = 1.07]
+     |  |  |--[dendrogram w/ 2 branches and 4 members at h = 0.865]
+     |  |  |  |--leaf "TCGA-OR-A5LL-01A-21-A39K-20" 
+     |  |  |  `--[dendrogram w/ 2 branches and 3 members at h = 0.623]
+     |  |  |     |--leaf "TCGA-OR-A5JW-01A-21-A39K-20" 
+     |  |  |     `--[dendrogram w/ 2 branches and 2 members at h = 0.557]
+     |  |  |        |--leaf "TCGA-OR-A5K6-01A-21-A39K-20" 
+     |  |  |        `--leaf "TCGA-OU-A5PI-01A-21-A39K-20" 
+     |  |  `--[dendrogram w/ 2 branches and 3 members at h = 0.914]
+     |  |     |--leaf "TCGA-OR-A5K8-01A-21-A39K-20" 
+     |  |     `--[dendrogram w/ 2 branches and 2 members at h = 0.564]
+     |  |        |--leaf "TCGA-OR-A5LG-01A-21-A39K-20" 
+     |  |        `--leaf "TCGA-PK-A5H9-01A-21-A39K-20" 
+     |  `--[dendrogram w/ 2 branches and 8 members at h = 1.14]
+     |     |--[dendrogram w/ 2 branches and 2 members at h = 0.619]
+     |     |  |--leaf "TCGA-OR-A5J7-01A-21-A39K-20" 
+     |     |  `--leaf "TCGA-OR-A5JP-01A-21-A39K-20" 
+     |     `--[dendrogram w/ 2 branches and 6 members at h = 0.849]
+     |        |--[dendrogram w/ 2 branches and 2 members at h = 0.482]
+     |        |  |--leaf "TCGA-OR-A5K5-01A-21-A39K-20" 
+     |        |  `--leaf "TCGA-OR-A5KO-01A-21-A39K-20" 
+     |        `--[dendrogram w/ 2 branches and 4 members at h = 0.539]
+     |           |--leaf "TCGA-OR-A5JA-01A-21-A39K-20" 
+     |           `--[dendrogram w/ 2 branches and 3 members at h = 0.427]
+     |              |--leaf "TCGA-OR-A5KY-01A-21-A39K-20" 
+     |              `--[dendrogram w/ 2 branches and 2 members at h = 0.31]
+     |                 |--leaf "TCGA-OR-A5J3-01A-21-A39K-20" 
+     |                 `--leaf "TCGA-OR-A5KW-01A-21-A39K-20" 
+     `--[dendrogram w/ 2 branches and 14 members at h = 1.77]
+        |--[dendrogram w/ 2 branches and 3 members at h = 0.664]
+        |  |--leaf "TCGA-OR-A5KU-01A-21-A39K-20" 
+        |  `--[dendrogram w/ 2 branches and 2 members at h = 0.577]
+        |     |--leaf "TCGA-OR-A5J8-01A-21-A39K-20" 
+        |     `--leaf "TCGA-P6-A5OG-01A-11-A39K-20" 
+        `--[dendrogram w/ 2 branches and 11 members at h = 1.38]
+           |--[dendrogram w/ 2 branches and 4 members at h = 0.694]
+           |  |--[dendrogram w/ 2 branches and 2 members at h = 0.405]
+           |  |  |--leaf "TCGA-OR-A5J2-01A-21-A39K-20" 
+           |  |  `--leaf "TCGA-OR-A5J9-01A-21-A39K-20" 
+           |  `--[dendrogram w/ 2 branches and 2 members at h = 0.485]
+           |     |--leaf "TCGA-OR-A5LO-01A-21-A39K-20" 
+           |     `--leaf "TCGA-OR-A5LS-01A-21-A39K-20" 
+           `--[dendrogram w/ 2 branches and 7 members at h = 1.2]
+              |--[dendrogram w/ 2 branches and 2 members at h = 0.583]
+              |  |--leaf "TCGA-OR-A5JS-01A-21-A39K-20" 
+              |  `--leaf "TCGA-OR-A5K4-01A-21-A39K-20" 
+              `--[dendrogram w/ 2 branches and 5 members at h = 1.02]
+                 |--[dendrogram w/ 2 branches and 2 members at h = 0.718]
+                 |  |--leaf "TCGA-OR-A5JY-01A-21-A39K-20" 
+                 |  `--leaf "TCGA-OR-A5LJ-01A-21-A39K-20" 
+                 `--[dendrogram w/ 2 branches and 3 members at h = 0.873]
+                    |--leaf "TCGA-OR-A5K0-01A-21-A39K-20" 
+                    `--[dendrogram w/ 2 branches and 2 members at h = 0.618]
+                       |--leaf "TCGA-OR-A5KZ-01A-21-A39K-20" 
+                       `--leaf "TCGA-OR-A5LD-01A-21-A39K-20" 

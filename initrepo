@@ -1,0 +1,39 @@
+#!/bin/sh
+
+#  Copyright (C) 2025 The University of Texas MD Anderson Cancer Center
+#
+#  This file is part of shaidy server.
+#
+#  shaidy server is free software: you can redistribute it and/or modify it under the terms of the
+#  GNU General Public License Version 2 as published by the Free Software Foundation.
+#
+#  shaidy server is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#  See the GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License along with shaidy server.
+#  If not, see <https://www.gnu.org/licenses/>.
+
+# This script is used to manually initialize a new shaidy server during deployment
+
+if [ $# -ne 1 ] ; then
+    echo Usage: $0 repo-directory
+    exit 1
+elif [ ! -d $1 ] ; then
+    echo $1 is not a directory
+    exit 1
+else
+    xxx=$( ls -A $1 )
+    if [ ${#xxx[@]} -gt 1 ] ; then
+        echo $1 is not empty
+        exit 1
+    fi
+    base=`dirname $0`/shaidyserver.build/example.repo
+    if [ ! -d $base ] ; then
+        echo Cannot find example.repo.  Something strange going on.
+        exit 1
+    fi
+    echo Initializing shaidy repository in folder $1
+    rsync -a $base/ $1/
+    mkdir -p $1/collection/users $1/file $1/compendium
+fi

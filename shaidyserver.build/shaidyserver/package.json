@@ -1,0 +1,40 @@
+{
+  "name": "shaidyserver",
+  "version": "1.0.0",
+  "description": "Server for Shaidy NGCHMs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "gendoc": "jsdoc --configure ./jsdoc.conf",
+    "gensecrets": "node gensecrets.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDev": "nodemon index.js"
+  },
+  "author": "Bradley Broom",
+  "license": "ISC",
+  "dependencies": {
+    "auth0": "^2.17.0",
+    "axios": "^0.18.0",
+    "base64url": "^3.0.1",
+    "body-parser": "^1.15.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-jwt": "^5.1.0",
+    "fs-ext": "^1.2.1",
+    "fs-extra": "^7.0.1",
+    "ink-docstrap": "^1.3.0",
+    "jsdoc": "^3.4.3",
+    "jsdoc-route-plugin": "^0.1.0",
+    "jwks-rsa": "^1.4.0",
+    "lru-cache": "^5.1.1",
+    "promise": "^8.0.3",
+    "recursive-readdir": "^2.0.0",
+    "secure-random": "^1.1.1",
+    "simple-oauth2": "^2.2.1",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-security": "^1.4.0",
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,68 @@
+name: 'shaidy'
+
+#  Copyright (C) 2025 The University of Texas MD Anderson Cancer Center
+#
+#  This file is part of shaidy server.
+#
+#  shaidy server is free software: you can redistribute it and/or modify it under the terms of the
+#  GNU General Public License Version 2 as published by the Free Software Foundation.
+#
+#  shaidy server is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+#  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#  See the GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License along with shaidy server.
+#  If not, see <https://www.gnu.org/licenses/>.
+
+services:
+    ngchm:
+        image: ${REGNS:-ngchm}/ngchm:${NGCHMTAG:-2.26.0}
+        restart: "no"
+        network_mode: none
+    node:
+        build:
+            context: ./shaidyserver.build
+            target: ${BUILD_TARGET:-prod}
+        container_name: ${SHAIDY_CONTAINER_NAME:-shaidy-node}
+        image: ${REGNS:-ngchm}/shaidyserver:${SHAIDYTAG:-latest}
+        hostname: node
+        volumes_from:
+          - ngchm
+        volumes:
+          - ${SHAIDY_AUTHENTICATORS_HOST:-./.authenticators}:${SHAIDY_AUTHENTICATORS:-/usr/local/shaidyserver/.authenticators}
+          - ${SHAIDYREPO:-repo}:/repo
+        environment:
+          - NODE_ENV=${NODE_ENV:-production}
+          - STORAGE_BACKEND=${STORAGE_BACKEND:-filesystem}
+          - SHAIDY_ACCESS_MODE=READ-WRITE # Required to allow adding collections/maps
+          - SHAIDY_AUTHENTICATORS=${SHAIDY_AUTHENTICATORS:-/usr/local/shaidyserver/.authenticators} # path to .authenticators file inside container
+          # - MANAGER_EMAIL= comma-separated-list-of-manager-emails
+          # - JAVA_OPTIONS= additional parameters to pass to java
+        restart: always
+        networks:
+          - shaidynet
+    nginx:
+        build:
+            context: ./nginx.build
+        image: ${REGNS:-ngchm}/shaidynginx:${SHAIDYTAG:-latest}
+        hostname: nginx
+        container_name: ${NGINX_CONTAINER_NAME:-shaidy-nginx}
+        volumes_from:
+          - ngchm
+        depends_on:
+          - node
+        networks:
+          - shaidynet
+          - ngchmnet
+        ports:
+          - ${SHAIDYPORT:-8188}:80
+        restart: always
+
+volumes:
+  repo:
+
+networks:
+  shaidynet:
+    external: true
+  ngchmnet:
+    external: true

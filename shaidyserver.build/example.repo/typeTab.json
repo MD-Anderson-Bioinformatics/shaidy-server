@@ -1,0 +1,45 @@
+[{
+        "Type": "collection",
+        "Path": "collection"
+    },
+    {
+        "Type": "compendium",
+        "Path": "compendium"
+    },
+    {
+        "Type": "chm",
+        "Path": "chm"
+    },
+    {
+        "Type": "dataset",
+        "Path": "dataset"
+    },
+    {
+        "Type": "dendrogram",
+        "Path": "dendrogram"
+    },
+    {
+        "Type": "label",
+        "Path": "label"
+    },
+    {
+        "Type": "tile",
+        "Path": "tile"
+    },
+    {
+        "Type": "file",
+        "Path": "file"
+    },
+    {
+        "Type": "viewer",
+        "Path": "viewer"
+    },
+    {
+        "Type": "cache",
+        "Path": "cache"
+    },
+    {
+        "Type": "builderspec",
+        "Path": "builderspec"
+    }
+]

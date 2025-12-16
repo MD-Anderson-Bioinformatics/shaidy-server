@@ -1,0 +1,42 @@
+{
+	"chm_name": "tcga_rppa_acc_v2.0_sample_sample",
+	"chm_attributes": [{"chm.info.caption": "Sample-sample comparison of RPPA for 192 proteins in 46 tcga ACC samples, using the output from the 2016_01_20_1306 run of MDACC Data Converter."},{"chm.dendrogram.image.left.width": "125"},{"chm.right.image.width": "125"},{"chm.dendrogram.image.top.height": "125"},{"chm.bottom.image.height": "125"},{"!axistype.both": "bio.tcga.barcode.sample.vial.portion.analyte.aliquot"},{"!extraparam:bio.tcga.tumortype": "ACC"},{"!extraparam:bio.cbioportal.studyid": "acc_tcga"},{"chm.info.external.url": "http://bioinformatics.mdanderson.org/main/TCGA/Supplements/NGCHM-ACC"}],
+	"chm_description": "Sample-sample comparison of RPPA for 192 proteins in 46 tcga ACC samples, using the output from the 2016_01_20_1306 run of MDACC Data Converter.",
+	"matrix_files": [
+		{
+			"name": "Correlation",
+			"path":  "/repo//dataset//055af3bdff507bfe6fe273712c5ab93000685ec5//matrix.tsv",
+			"summary_method": "average",
+			"color_map": {
+				"type": "linear",
+				"missing": "#00ff00",
+				"colors": ["#0000ff", "#ffffff", "#ff0000"],
+				"thresholds": [-0.6, 0, 0.6]
+			}
+
+		}
+	],
+	"row_configuration": 
+		{
+		"data_type" : "bio.tcga.barcode.sample.vial.portion.analyte.aliquot",
+		"distance_metric":  "correlation",
+		"agglomeration_method": "ward.D2",
+		"dendro_file": "/repo//dendrogram//78e0390ef87180e5a20b8e66a88d16948ecb9806//dendrogram-data.tsv",
+		"order_file": "/repo//dendrogram//78e0390ef87180e5a20b8e66a88d16948ecb9806//dendrogram-order.tsv",
+		"order_method": "Hierarchical"
+		}
+	,
+	"col_configuration": 
+		{
+		"data_type" : "bio.tcga.barcode.sample.vial.portion.analyte.aliquot",
+		"distance_metric":  "correlation",
+		"agglomeration_method": "ward.D2",
+		"dendro_file": "/repo//dendrogram//78e0390ef87180e5a20b8e66a88d16948ecb9806//dendrogram-data.tsv",
+		"order_file": "/repo//dendrogram//78e0390ef87180e5a20b8e66a88d16948ecb9806//dendrogram-order.tsv",
+		"order_method": "Hierarchical"
+		}
+	,
+	"classification_files": [
+	],
+	"output_location": "/repo/viewer/568bf58a2128f7cee1698e03a0f43a22b293d483/tcga_rppa_acc_v2.0_sample_sample"
+}
