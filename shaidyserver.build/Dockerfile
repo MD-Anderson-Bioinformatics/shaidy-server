@@ -1,4 +1,4 @@
-FROM node:23.6.1-bookworm AS modules-base
+FROM node:26.13.0-bookworm-slim@sha256:bc0a2afd3b74ce12222fc8bab99271e66257f021078f5f4a5d687a77d280c1d9 AS modules-base
 
 #  Copyright (C) 2025 The University of Texas MD Anderson Cancer Center
 #
@@ -24,7 +24,7 @@ COPY shaidyserver/package.json ${HOME}
 RUN npm install && npm install nodemon -g && npm install jsdoc -g && npm install -g eslint eslint-plugin-security
 
 
-FROM node:23.6.1-bookworm AS prod
+FROM node:26.13.0-bookworm-slim@sha256:bc0a2afd3b74ce12222fc8bab99271e66257f021078f5f4a5d687a77d280c1d9 AS prod
 
 RUN mkdir -p /usr/share/man/man1
 RUN apt-get update && apt-get install -yq --no-install-recommends git zip default-jre
